@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Raleway', sans-serif;
+    background-image: url(../images/image01.jpg);
+    background-size: cover ;
+    background-position: top center;
+}
+
+
+
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 15px 15px;
+}
+
+.display{
+    text-align: center;
+}
+
+input[type="text"]{
+    height: 50px;
+    width: 400px;
+    background: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 20px;
+    border: none;
+    border-radius: 2px;
+    padding: 10px 20px;
+    transition: 0.2 ease-in-out;
+}
+
+input[type="submit"]{
+    height: 50px;
+    width: 100px;
+    background: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 20px;
+    border: none;
+    border-radius: 2px;
+}
+header input:focus{
+    background-color: rgb(211, 240, 238);
+}
+.display{
+    text-align: center;
+}
