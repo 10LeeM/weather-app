@@ -11,8 +11,13 @@ body{
     background-position: top center;
 }
 
-
-
+.app-wrap{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.5),
+    rgba(0, 0, 0, 0.6));
+}
 
 header{
     display: flex;
@@ -20,37 +25,75 @@ header{
     align-items: center;
     padding: 50px 15px 15px;
 }
-
 .display{
     text-align: center;
 }
 
-input[type="text"]{
-    height: 50px;
-    width: 400px;
-    background: white;
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: bold;
-    font-size: 20px;
+header input{
+    width: 100%;
+    max-width: 280px;
+    padding: 10px 15px;
+    appearance: none;
     border: none;
-    border-radius: 2px;
-    padding: 10px 20px;
-    transition: 0.2 ease-in-out;
+    outline: none;
+    background-color: rgba(255,255, 255, 0.3);
+    border-bottom: 3px solid rgb(0, 213, 255);
+    border-radius: 0px 0px 12px 12px;
+    ;
+
+    color: black;
+    font-size: 20px;
+    font-weight: 300;
+    transition: 0.2s ease;
 }
 
-input[type="submit"]{
-    height: 50px;
-    width: 100px;
-    background: white;
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: bold;
-    font-size: 20px;
-    border: none;
-    border-radius: 2px;
-}
 header input:focus{
-    background-color: rgb(211, 240, 238);
+    background-color: rgb(115, 207, 187);
 }
-.display{
+
+main{
+    flex: 1 1 100%;
+    padding: 25px 25px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
+}
+
+.location .city{
+    color: black;
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.location .date{
+    color: black;
+    font-size: 24px;
+    font-weight: 450;
+
+}
+
+.current .temp{
+    color: black;
+    font-size: 90px;
+    font-weight: 700;
+    margin: 30px 0px;
+    text-shadow: 4px 8px rgba(0, 0, 0, 0.6);
+}
+
+.current .weather{
+    color: black;
+    font-size: 32px;
+    font-weight: 700;
+    font-style: italic;
+    margin-bottom: 15px;
+    text-shadow: 0px 3px rgba(0,0,0.4);
+}
+
+.current .hi-low{
+    color: black;
+    font-size: 24px;
+    font-weight: 500;
+    text-shadow: 0px 4px rgba(0, 0, 0, 0.4);
 }
