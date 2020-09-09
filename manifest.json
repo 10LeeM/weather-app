@@ -7,7 +7,7 @@
     "display": "standalone",
     "icons":[
         {
-            "src":"images/icon2.png",
+            "src":"/PWA/images/weather.png",
             "sizes":"512x512",
             "type":"image/png"
         }
