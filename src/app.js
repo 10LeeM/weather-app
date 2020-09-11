@@ -31,13 +31,13 @@ function displayResults(weather){
     date.innerText = dateBuilder(now);
 
     let temp = document.querySelector('.current .temp');
-    temp.innerHTML= `${Math.round(weather.main.temp)}`;
+    temp.innerHTML= `${Math.round(weather.main.temp) + '&#8451'}`;
 
     let weather_el = document.querySelector('.current .weather');
     weather_el.innerText= weather.weather[0].main;
 
     let hilow= document.querySelector('.hi-low');
-    hilow.innerText = `${weather.main.temp_min}*c / ${weather.main.temp_max}*c`;
+    hilow.innerText = `${weather.main.temp_min} c/ ${weather.main.temp_max} c`;
 }
 
 function  dateBuilder (d) {
