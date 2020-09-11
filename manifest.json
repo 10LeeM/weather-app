@@ -4,12 +4,19 @@
     "start_url":".",
     "background_color": "aqua",
     "theme_color":"blue" ,
+    "description":"Weather information",
     "display": "standalone",
     "icons":[
         {
             "src":"/PWA/images/weather.png",
             "sizes":"512x512",
             "type":"image/png"
+        },
+        {
+            "src":"/PWA/images/weather.png",
+            "sizes":"512x512",
+            "type":"image/png",
+            "purpose":"maskable"
         }
     ]
 }
